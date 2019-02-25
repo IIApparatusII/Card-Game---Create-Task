@@ -5,8 +5,9 @@ html {
 
 .text {
   font-family: Impact;
-  font-color: white;
-  background: transparent;
+  background-color: green;
+  text-align: center;
+  padding: none;
 }
 
 h1 {
