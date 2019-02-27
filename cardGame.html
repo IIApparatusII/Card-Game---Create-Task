@@ -4,20 +4,21 @@
   <head>
     <title>Tens Card Game</title>
     <!-- CSS -->
-    <link href="styles/stylesheet.css" type="text/css" rel="stylesheet"/>
-    
+    <link href="stylesheet.css" type="text/css" rel="stylesheet"/>
+
     <!-- JavaScript -->
-    <script type="text/javascript" src="js/gameCode.js"></script>
+    <script type="text/javascript" src="gameCode.js"></script>
   </head>
-  
+
   <body>
     <h1 class="text">Tens Card Game</h1>
     <h3 class="text">Your Opponent</h3>
 
-<table style="border: 1px solid black;">
+<button class="enemy" align="center">Enemy</button>
+<table align="center" width="50%"" style=margin-top:50px; >
 	<tr>
-    	<td><button>1</button></td>
-        <td><button>2</button></td>
+    	<td><button onclick="game()">1</button></td>
+        <td><button onclick="shuffle()">2</button></td>
         <td><button>3</button></td>
         <td><button>4</button></td>
         <td><button>5</button></td>
