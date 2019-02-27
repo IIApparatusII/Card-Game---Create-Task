@@ -1,35 +1,53 @@
-html {
-  background-image: url(https://media.istockphoto.com/photos/green-poker-table-felt-background-picture-id140020812?k=6&m=140020812&s=612x612&w=0&h=bCiTklibggzhy4_2kOy_Xvb4PwAAAnDXp7Ar1sbYF0Q=);
-  background-size: cover;
+
+function game(){
+
+  var cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  var used= [];
+  let i= cards.length;
+  j=0;
+shuffle();
+//  while (i--) {
+//    j = Math.floor(Math.random() * (i+1));
+//    used.push(cards[j]);
+//    cards.splice(j,1);
+//console.log(cards.length);
 }
 
-.text {
-  font-family: Impact;
-  background-color: green;
-  text-align: center;
-  padding: none;
-}
 
-table, th, td{
-  border: none;
-  align-content: center;
-}
 
-tr{
-  height: 100px;
-}
-button{
-height: 89px;
-width: 64px;
-padding: 20px;
-border: none;
-border-radius: 10px;
+function shuffle([cards]){
+console.log("hello world");
+console.log(cards[1]);
 
 }
 
-h1 {
-  font-size: 28px;
-}
+function one{
 
-h3 {
-  font-size: 14px;
+}
+function two{
+
+}
+function three{
+
+}
+function four{
+
+}
+function five{
+
+}
+function six{
+
+}
+function seven{
+
+}
+function eight{
+
+}
+function nine{
+
+}
+function ten{
+
+}
