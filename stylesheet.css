@@ -1,6 +1,6 @@
 html {
   background-image: url(https://media.istockphoto.com/photos/green-poker-table-felt-background-picture-id140020812?k=6&m=140020812&s=612x612&w=0&h=bCiTklibggzhy4_2kOy_Xvb4PwAAAnDXp7Ar1sbYF0Q=);
-  background-size: cover;
+  background-size: fill;
 }
 
 .text {
@@ -17,3 +17,12 @@ h1 {
 h3 {
   font-size: 14px;
 }
+
+table {
+  border: none;
+}
+
+button {
+  padding: 20px;
+  border: none;
+  }
