@@ -19,7 +19,9 @@ button.enemy{
   height:267px;
   width: 192px;
   margin-left: 40%;
-
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('aceofhearts.jpg')
 }
 
 tr{
