@@ -21,9 +21,14 @@ button.enemy{
   margin-left: 40%;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url('aceofhearts.jpg')
+background-image: url('aceofhearts.jpg')
+
 }
 
+img.cardButton{
+height: 89px;
+border-radius:10px;
+}
 tr{
   height: 100px;
 }
@@ -42,9 +47,4 @@ h1 {
 
 h3 {
   font-size: 14px;
-}
 
-img {
-  width: 64px;
-  height: 89px;
-}
