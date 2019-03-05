@@ -3,7 +3,7 @@ var theirs;
 var yourScore=0;
 var theirScore=0;
 var rounds=0;
-var shuffled;
+var shuffled=false;
 var shuffledCards=[];
 
 //Order of Events
@@ -31,7 +31,7 @@ var shuffledCards=[];
 
 function game(){
   var cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  console.log(shuffled)
+  console.log("shuffled:" + shuffled)
 
 
 //  if(shuffled=false){
@@ -50,10 +50,10 @@ function shuffle(cards) {
     cards[m] = cards[i];
     cards[i] = t;
   }
-  //shuffled=1;
-  //console.log(cards)
+  shuffled=true;
+  console.log(cards)
    shuffledCards= cards;
-//  console.log(shuffledCards)
+  console.log(shuffledCards)
   round(shuffledCards);
 }
 ////////////////////////////
@@ -64,6 +64,7 @@ function round(shuffledCards){
   console.log("theirs:" + theirs);
   shuffledCards.shift();
   console.log(shuffledCards)
+  shuffled=true;
   score();
 
 }
@@ -118,64 +119,125 @@ function one(){
 yours=1;
 rounds++;
 document.getElementById("One").disabled = true;
-console.log(yours)
-game();
+if(shuffled==false){
+  game();
 }
+ else{
+   round(shuffledCards);
+ }
+}
+
 
 function two(){
 yours=2;
 rounds++;
 document.getElementById("Two").disabled = true;
-game();
+if(shuffled==false){
+  game();
 }
+ else{
+   round(shuffledCards);
+ }
+}
+
+
 function three(){
 yours=3;
 rounds++;
 document.getElementById("Three").disabled = true;
-game();
+if(shuffled==false){
+  game();
 }
+ else{
+   round(shuffledCards);
+ }
+}
+
+
 function four(){
 yours=4;
 rounds++;
 document.getElementById("Four").disabled = true;
-game();
+if(shuffled==false){
+  game();
 }
+ else{
+   round(shuffledCards);
+ }
+}
+
 function five(){
 yours=5;
 rounds++;
 console.log(yours)
 document.getElementById("Five").disabled = true;
-game();
+if(shuffled==false){
+  game();
 }
+ else{
+   round(shuffledCards);
+ }
+}
+
 function six(){
 yours=6;
 rounds++;
 console.log(yours)
 document.getElementById("Six").disabled = true;
-game();
+if(shuffled==false){
+  game();
 }
+ else{
+   round(shuffledCards);
+ }
+}
+
 function seven(){
 yours=7;
 rounds++;
 document.getElementById("Seven").disabled = true;
-game();
+if(shuffled==false){
+  game();
 }
+ else{
+   round(shuffledCards);
+ }
+}
+
 function eight(){
 yours=8;
 rounds++;
 document.getElementById("Eight").disabled = true;
-game();
+if(shuffled==false){
+  game();
 }
+ else{
+   round(shuffledCards);
+//   round(shuffledCards);
+ }
+}
+
 function nine(){
 yours=9;
 rounds++;
 document.getElementById("Nine").disabled = true;
-game();
+if(shuffled==false){
+  game();
 }
+ else{
+   round(shuffledCards);
+ }
+}
+
 function ten(){
 yours=10;
 rounds++;
 document.getElementById("Ten").disabled = true;
-game();
+if(shuffled==false){
+  game();
+}
+ else{
+   round(shuffledCards);
+ }
 }
 /////////////////
