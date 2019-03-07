@@ -14,13 +14,13 @@ table, th, td{
   border: none;
   align-content: center;
 }
-button.enemy{
+button#enemie{
   height:267px;
   width: 192px;
   margin-left: 40%;
   background-size: contain;
-  background-repeat: no-repeat;
-background-image: url('aceofhearts.jpg')
+  background-repeat: repeat;
+/**background-image: url("Hearts/maxresdefault.jpg");**/
 
 }
 
