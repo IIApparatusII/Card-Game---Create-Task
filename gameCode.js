@@ -6,6 +6,20 @@ var rounds=0;
 var shuffled=false;
 var shuffledCards=[];
 
+var aceHearts="Spades/aceSpades.png";
+var oneHearts=0
+var twoHearts=0
+var threeHearts=0
+var fourHearts=0
+var fiveHearts=0
+var sixHearts=0
+var sevenHearts=0
+var eightHearts=0
+var nineHearts=0
+var tenHearts=0
+
+var enemyDeck= [aceHearts, oneHearts, twoHearts, threeHearts, fourHearts, fiveHearts, sixHearts, sevenHearts, eightHearts, nineHearts, tenHearts];
+
 //Order of Events
 //1. Gives instructions
 //2. Pick first card, assigned to yours (log yours) DONE
@@ -65,9 +79,17 @@ function round(shuffledCards){
   shuffledCards.shift();
   console.log(shuffledCards)
   shuffled=true;
-  score();
-
+  showCard(theirs);
 }
+
+function showCard(theirs){
+document.getElementById("enemie").src= enemyDeck[theirs-1];
+
+
+  score();
+}
+
+
 function score(){
 if(yours>theirs){
   yourScore++;
@@ -108,10 +130,7 @@ function results(){
 
 
 ///ANIMATION/////
-function showCard(){
-var image=document.getElementById(img2);
-image.src='twoofhearts.jpg';
-}
+
 /////////
 
 /// YOUR CARD FUNCTIONS///
@@ -241,3 +260,4 @@ if(shuffled==false){
  }
 }
 /////////////////
+
