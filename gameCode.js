@@ -6,19 +6,18 @@ var rounds=0;
 var shuffled=false;
 var shuffledCards=[];
 
-var aceHearts="Spades/aceSpades.png";
-var oneHearts=0
-var twoHearts=0
-var threeHearts=0
-var fourHearts=0
-var fiveHearts=0
-var sixHearts=0
-var sevenHearts=0
-var eightHearts=0
-var nineHearts=0
-var tenHearts=0
+var aceHearts="Spades/aceSpades.png"
+var twoHearts="Spades/twoSpades.png"
+var threeHearts="Spades/threeSpades.png"
+var fourHearts="Spades/fourSpades.png"
+var fiveHearts="Spades/fiveSpades.png"
+var sixHearts="Spades/sixSpades.png"
+var sevenHearts="Spades/sevenSpades.png"
+var eightHearts="Spades/eightSpades.png"
+var nineHearts="Spades/nineSpades.png"
+var tenHearts="Spades/tenSpades.png"
 
-var enemyDeck= [aceHearts, oneHearts, twoHearts, threeHearts, fourHearts, fiveHearts, sixHearts, sevenHearts, eightHearts, nineHearts, tenHearts];
+var enemyDeck= [aceHearts, twoHearts, threeHearts, fourHearts, fiveHearts, sixHearts, sevenHearts, eightHearts, nineHearts, tenHearts];
 
 //Order of Events
 //1. Gives instructions
@@ -83,8 +82,13 @@ function round(shuffledCards){
 }
 
 function showCard(theirs){
-document.getElementById("enemie").src= enemyDeck[theirs-1];
 
+document.getElementById('enemie').src= "http://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-2_grande.png?v=1535755695";
+
+//enemyDeck[theirs-1];
+console.log("The computer is reading function showCard")
+console.log("Theirs-1: " + (Number(theirs)-1))
+console.log(enemyDeck[theirs-1])
 
   score();
 }
@@ -260,4 +264,3 @@ if(shuffled==false){
  }
 }
 /////////////////
-
