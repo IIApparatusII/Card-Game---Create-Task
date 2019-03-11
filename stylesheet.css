@@ -14,15 +14,45 @@ table, th, td{
   border: none;
   align-content: center;
 }
-button#enemie{
+
+th.score{
+border-style: dashed;
+background-color: white;
+padding-top: 0;
+}
+
+img#enemie{
   height:267px;
   width: 192px;
   margin-left: 40%;
+  border-radius: 10px;
   background-size: contain;
-  background-repeat: repeat;
-/**background-image: url("Hearts/maxresdefault.jpg");**/
-
+  background-repeat: repeat;*/
+background-image: url("Hearts/maxresdefault.jpg");
 }
+
+img#mine{
+  height:267px;
+  width: 192px;
+  float: left;
+  margin-left: 40%;
+  border-radius: 10px;
+  background-size: contain;
+  background-repeat: repeat;*/
+background-image: url("Hearts/maxresdefault.jpg");
+}
+
+
+img.show{
+display: none;
+}
+
+img.win{
+  border-color: gold;
+  border-radius: 10px;
+  border-width: thick;
+}
+
 
 img.cardButton{
 height: 89px;
@@ -44,8 +74,10 @@ border-radius: 10px;
 
 h1 {
   font-size: 28px;
+  font-family: Impact;
 }
 
 h3 {
   font-size: 14px;
-
+  font-family: Impact;
+}
