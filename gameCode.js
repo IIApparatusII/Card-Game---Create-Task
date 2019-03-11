@@ -7,14 +7,14 @@ var shuffled=false;
 var shuffledCards=[];
 
 var aceHearts="Spades/aceSpades.png"
-var twoHearts="Spades/twoSpades.png"
-var threeHearts="Spades/threeSpades.png"
-var fourHearts="Spades/fourSpades.png"
-var fiveHearts="Spades/fiveSpades.png"
-var sixHearts="Spades/sixSpades.png"
-var sevenHearts="Spades/sevenSpades.png"
-var eightHearts="Spades/eightSpades.png"
-var nineHearts="Spades/nineSpades.png"
+var twoHearts="Spades/2spades.png"
+var threeHearts="Spades/3Spades.png"
+var fourHearts="Spades/4Spades.png"
+var fiveHearts="Spades/5Spades.png"
+var sixHearts="Spades/6Spades.png"
+var sevenHearts="Spades/7Spades.png"
+var eightHearts="Spades/8Spades.png"
+var nineHearts="Spades/9Spades.png"
 var tenHearts="Spades/tenSpades.png"
 
 var enemyDeck= [aceHearts, twoHearts, threeHearts, fourHearts, fiveHearts, sixHearts, sevenHearts, eightHearts, nineHearts, tenHearts];
@@ -83,9 +83,7 @@ function round(shuffledCards){
 
 function showCard(theirs){
 
-document.getElementById('enemie').src= "http://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-2_grande.png?v=1535755695";
-
-//enemyDeck[theirs-1];
+document.getElementById('enemie').src= enemyDeck[theirs-1];
 console.log("The computer is reading function showCard")
 console.log("Theirs-1: " + (Number(theirs)-1))
 console.log(enemyDeck[theirs-1])
@@ -119,6 +117,7 @@ if(rounds>9){
   }
 }
 
+
 function results(){
   if(yourScore>theirScore){
     window.alert("You Win!");
@@ -129,6 +128,47 @@ function results(){
   else{
     alert("Tie.")
   }
+}
+
+function disappearOne(){
+ document.getElementById("One").className= "show";
+ document.getElementById('mine').src= "Spades/aceSpades.png";
+}
+function disappearTwo(){
+ document.getElementById("Two").className= "show";
+ document.getElementById('mine').src= "Spades/2Spades.png";
+}
+function disappearThree(){
+ document.getElementById("Three").className= "show";
+ document.getElementById('mine').src= "Spades/3Spades.png";
+}
+function disappearFour(){
+ document.getElementById("Four").className= "show";
+ document.getElementById('mine').src= "Spades/4Spades.png";
+}
+function disappearFive(){
+ document.getElementById("Five").className= "show";
+ document.getElementById('mine').src= "Spades/5Spades.png";
+}
+function disappearSix(){
+ document.getElementById("Six").className= "show";
+ document.getElementById('mine').src= "Spades/6Spades.png";
+}
+function disappearSeven(){
+ document.getElementById("Seven").className= "show";
+ document.getElementById('mine').src= "Spades/7Spades.png";
+}
+function disappearEight(){
+ document.getElementById("Eight").className= "show";
+ document.getElementById('mine').src= "Spades/8Spades.png";
+}
+function disappearNine(){
+ document.getElementById("Nine").className= "show";
+ document.getElementById('mine').src= "Spades/9Spades.png";
+}
+function disappearTen(){
+ document.getElementById("Ten").className= "show";
+ document.getElementById('mine').src= "Spades/tenSpades.png";
 }
 ////////////////////////////////
 
