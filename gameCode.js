@@ -6,16 +6,16 @@ var rounds=0;
 var shuffled=false;
 var shuffledCards=[];
 
-var aceHearts="Hearts/aceHearts.jpeg"
-var twoHearts="Hearts/twoHearts.jpeg"
-var threeHearts="Hearts/threeHearts.jpeg"
-var fourHearts="Hearts/fourHearts.jpeg"
-var fiveHearts="Hearts/fiveHearts.jpeg"
-var sixHearts="Hearts/sixHearts.jpeg"
-var sevenHearts="Hearts/sevenHearts.jpeg"
-var eightHearts="Hearts/eightHearts.jpeg"
-var nineHearts="Hearts/nineHearts.jpeg"
-var tenHearts="Hearts/tenHearts.jpeg"
+var aceHearts="Hearts/aceHearts.jpg"
+var twoHearts="Hearts/twoHearts.jpg"
+var threeHearts="Hearts/threeHearts.jpg"
+var fourHearts="Hearts/fourHearts.jpg"
+var fiveHearts="Hearts/fiveHearts.jpg"
+var sixHearts="Hearts/sixHearts.jpg"
+var sevenHearts="Hearts/sevenHearts.jpg"
+var eightHearts="Hearts/eightHearts.jpg"
+var nineHearts="Hearts/nineHearts.jpg"
+var tenHearts="Hearts/tenHearts.jpg"
 
 var enemyDeck= [aceHearts, twoHearts, threeHearts, fourHearts, fiveHearts, sixHearts, sevenHearts, eightHearts, nineHearts, tenHearts];
 
