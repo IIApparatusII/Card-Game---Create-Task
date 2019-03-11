@@ -14,34 +14,38 @@
     <h1 class="text">MR WILSON FINNA LOSE: THE CARD GAME</h1>
     <h3 class="text">Your Opponent</h3>
 <table width="100%">
-  <th align="center">
+  <th align="center" class="score">
     <h1>Your Score</h1>
     <br>
     <h2 id="score"></h2>
   </th>
-<th><button id="enemie" align="left">Enemy</button></th>
-<th align="center"">
+<th>
+  <img id="mine" align="left" src="http://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-2_grande.png?v=1535755695"></th>
+<th>  <img id="enemie" align="right" src="http://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-2_grande.png?v=1535755695"></th>
+<th align="center" class="score">
     <h1>Opponent Score</h1>
     <br>
     <h2 id="score1"></h2>
 </th>
 </table>
-<table align="center" width="50%"" style="margin-top:50px;" >
+<table align="center" width="50%" style="margin-top:50px;" >
 	<tr>
-    	  <td align="center"><img class="cardButton" src="Spades/aceSpades.png" id="One" onclick="one()"></td>
-        <td align="center"><img class="cardButton" src="Spades/2spades.png" id="Two" onclick="two()"></td>
-        <td align="center"><img class="cardButton" src="Spades/3spades.png" id="Three" onclick="three()"></td>
-        <td align="center"><img class="cardButton" src="Spades/4spades.png" id="Four" onclick="four()"></td>
-        <td align="center"><img class="cardButton" src="Spades/5spades.png" id="Five" onclick="five()"></td>
+    	  <td align="center"><img class="cardButton" src="Spades/aceSpades.png" id="One" onclick="one(); disappearOne()"></td>
+        <td align="center"><img class="cardButton" src="Spades/2spades.png" id="Two" onclick="two(); disappearTwo()"></td>
+        <td align="center"><img class="cardButton" src="Spades/3spades.png" id="Three" onclick="three(); disappearThree()"></td>
+        <td align="center"><img class="cardButton" src="Spades/4spades.png" id="Four" onclick="four(); disappearFour()"></td>
+        <td align="center"><img class="cardButton" src="Spades/5spades.png" id="Five" onclick="five(); disappearFive()"></td>
 	</tr>
-    	  <td align="center"><img class="cardButton" src="Spades/6spades.png" id="Six" onclick="six()"></td>
-        <td align="center"><img class="cardButton" src="Spades/7spades.png" id="Seven" onclick="seven()"></td>
-        <td align="center"><img class="cardButton" src="Spades/8spades.png" id="Eight" onclick="eight()"></td>
-        <td align="center"><img class="cardButton" src="Spades/9spades.png" id="Nine" onclick="nine()"></td>
-        <td align="center"><img class="cardButton" src="Spades/tenspades.png" id="Ten" onclick="ten()"></td>
+    	  <td align="center"><img class="cardButton" src="Spades/6spades.png" id="Six" onclick="six(); disappearSix()"></td>
+        <td align="center"><img class="cardButton" src="Spades/7spades.png" id="Seven" onclick="seven(); disappearSeven()"></td>
+        <td align="center"><img class="cardButton" src="Spades/8spades.png" id="Eight" onclick="eight(); disappearEight()"></td>
+        <td align="center"><img class="cardButton" src="Spades/9spades.png" id="Nine" onclick="nine(); disappearNine()"></td>
+        <td align="center"><img class="cardButton" src="Spades/tenspades.png" id="Ten" onclick="ten(); disappearTen()"></td>
 	<tr>
     </tr>
 </table>
+<!-- <embed name="Industrializebaby" src="Spades/IndustrializeBabyAudio.mp3" loop="false" hidden="true" autostart="true">-->
   </body>
 
 </html>
+
