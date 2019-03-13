@@ -52,6 +52,7 @@ img#enemie{
   height:267px;
   width: 192px;
   margin-right: 40%;
+  margin-left: 10%;
   border-radius: 10px;
   background-size: contain;
   background-repeat: repeat;*/
@@ -63,6 +64,7 @@ img#mine{
   width: 192px;
   float: left;
   margin-left: 40%;
+  margin-right: 10%;
   border-radius: 10px;
   background-size: contain;
   background-repeat: repeat;*/
