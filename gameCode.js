@@ -1,3 +1,8 @@
+$("#button").click(function() {
+  $('.transform').toggleClass('transform-active');
+});
+
+
 var yours;
 var theirs;
 var yourScore=0;
