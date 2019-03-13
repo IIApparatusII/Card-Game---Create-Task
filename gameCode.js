@@ -168,7 +168,7 @@ function disappearNine(){
 }
 function disappearTen(){
  document.getElementById("Ten").className= "show";
- document.getElementById('mine').src= "Spades/tenspades.png";
+ document.getElementById('mine').src= "Spades/10spades.png";
 }
 ////////////////////////////////
 
