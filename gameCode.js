@@ -136,39 +136,39 @@ function disappearOne(){
 }
 function disappearTwo(){
  document.getElementById("Two").className= "show";
- document.getElementById('mine').src= "Spades/2Spades.png";
+ document.getElementById('mine').src= "Spades/2spades.png";
 }
 function disappearThree(){
  document.getElementById("Three").className= "show";
- document.getElementById('mine').src= "Spades/3Spades.png";
+ document.getElementById('mine').src= "Spades/3spades.png";
 }
 function disappearFour(){
  document.getElementById("Four").className= "show";
- document.getElementById('mine').src= "Spades/4Spades.png";
+ document.getElementById('mine').src= "Spades/4spades.png";
 }
 function disappearFive(){
  document.getElementById("Five").className= "show";
- document.getElementById('mine').src= "Spades/5Spades.png";
+ document.getElementById('mine').src= "Spades/5spades.png";
 }
 function disappearSix(){
  document.getElementById("Six").className= "show";
- document.getElementById('mine').src= "Spades/6Spades.png";
+ document.getElementById('mine').src= "Spades/6spades.png";
 }
 function disappearSeven(){
  document.getElementById("Seven").className= "show";
- document.getElementById('mine').src= "Spades/7Spades.png";
+ document.getElementById('mine').src= "Spades/7spades.png";
 }
 function disappearEight(){
  document.getElementById("Eight").className= "show";
- document.getElementById('mine').src= "Spades/8Spades.png";
+ document.getElementById('mine').src= "Spades/8spades.png";
 }
 function disappearNine(){
  document.getElementById("Nine").className= "show";
- document.getElementById('mine').src= "Spades/9Spades.png";
+ document.getElementById('mine').src= "Spades/9spades.png";
 }
 function disappearTen(){
  document.getElementById("Ten").className= "show";
- document.getElementById('mine').src= "Spades/tenSpades.png";
+ document.getElementById('mine').src= "Spades/tenspades.png";
 }
 ////////////////////////////////
 
