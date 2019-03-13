@@ -1,5 +1,5 @@
-$("#button").click(function() {
-  $('.transform').toggleClass('transform-active');
+("#button").click(function() {
+  ('.transform').toggleClass('transform-active');
 });
 
 
