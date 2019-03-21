@@ -30,8 +30,16 @@
     <br>
     <h2 id="score"></h2>
   </td>
+
+<!--What we're working with right now-->
+
 <td>
-  <img id="mine" src="http://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-2_grande.png?v=1535755695"></td>
+  <img id="mine" ondrop="drop(event)" ondragover="allowDrop(event)" src="http://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-2_grande.png?v=1535755695">
+</td>
+
+<!------------------------------------->
+
+
 <td>  <img id="enemie" src="http://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-2_grande.png?v=1535755695"></td>
 <td align="center" class="score" width="192px">
     <h1>Opponent Score</h1>
@@ -42,17 +50,17 @@
 	  <h1 class="text">Select a Card</h1>
 <table align="center" width="50%" style="margin-top:50px;" >
 	<tr>
-    	  <td align="center"><img class="cardButton" src="Spades/aceSpades.png" id="One" onclick="one(); disappearOne()"></td>
-        <td align="center"><img class="cardButton" src="Spades/2spades.png" id="Two" onclick="two(); disappearTwo()"></td>
-        <td align="center"><img class="cardButton" src="Spades/3spades.png" id="Three" onclick="three(); disappearThree()"></td>
-        <td align="center"><img class="cardButton" src="Spades/4spades.png" id="Four" onclick="four(); disappearFour()"></td>
-        <td align="center"><img class="cardButton" src="Spades/5spades.png" id="Five" onclick="five(); disappearFive()"></td>
+    	  <td align="center"><img class="cardButton" src="Spades/aceSpades.png" id="One" ondragstart=" drag(event); setOne()" draggable="true" <!--one(); disappearOne();"--></td>
+        <td align="center"><img class="cardButton" src="Spades/2spades.png" id="Two" ondragstart=" drag(event); setTwo()" draggable="true"></td>
+        <td align="center"><img class="cardButton" src="Spades/3spades.png" id="Three" ondragstart=" drag(event); setThree()" draggable="true"></td>
+        <td align="center"><img class="cardButton" src="Spades/4spades.png" id="Four" ondragstart=" drag(event); setFour()" draggable="true"></td>
+        <td align="center"><img class="cardButton" src="Spades/5spades.png" id="Five" ondragstart=" drag(event); setFive()" draggable="true"></td>
 	</tr>
-    	  <td align="center"><img class="cardButton" src="Spades/6spades.png" id="Six" onclick="six(); disappearSix()"></td>
-        <td align="center"><img class="cardButton" src="Spades/7spades.png" id="Seven" onclick="seven(); disappearSeven()"></td>
-        <td align="center"><img class="cardButton" src="Spades/8spades.png" id="Eight" onclick="eight(); disappearEight()"></td>
-        <td align="center"><img class="cardButton" src="Spades/9spades.png" id="Nine" onclick="nine(); disappearNine()"></td>
-        <td align="center"><img class="cardButton" src="Spades/10spades.png" id="Ten" onclick="ten(); disappearTen()"></td>
+    	  <td align="center"><img class="cardButton" src="Spades/6spades.png" id="Six" ondragstart=" drag(event); setSix()" draggable="true"></td>
+        <td align="center"><img class="cardButton" src="Spades/7spades.png" id="Seven" ondragstart=" drag(event); setSeven()" draggable="true"></td>
+        <td align="center"><img class="cardButton" src="Spades/8spades.png" id="Eight" ondragstart=" drag(event); setEight()" draggable="true"></td>
+        <td align="center"><img class="cardButton" src="Spades/9spades.png" id="Nine" ondragstart=" drag(event); setNine()" draggable="true"></td>
+        <td align="center"><img class="cardButton" src="Spades/10spades.png" id="Ten" ondragstart=" drag(event); setTen()" draggable="true"></td>
 	<tr>
     </tr>
 </table>
@@ -64,8 +72,7 @@
 </div>
 
 <input type="button" id="button" value="Click Me"></input>
--->
   </body>
-
+-->
 
 </html>
