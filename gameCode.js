@@ -1,5 +1,3 @@
-
-
 var yours;
 var theirs;
 var yourScore=0;
@@ -7,6 +5,7 @@ var theirScore=0;
 var rounds=0;
 var shuffled=false;
 var shuffledCards=[];
+var set;
 
 var aceHearts="Hearts/aceHearts.jpg"
 var twoHearts="Hearts/twoHearts.jpg"
@@ -74,6 +73,63 @@ function shuffle(cards) {
 ////////////////////////////
 
 ////////EVERY ROUND///////
+function drag(ev) {
+  ev.dataTransfer.setData("image", ev.target.id);
+  console.log("we're workin here 1")
+}
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("image");
+  ev.target.appendChild(document.getElementById(data));
+  console.log("we're workin here 3")
+
+  if(set==1){
+    one();
+    disappearOne();
+  }
+  else if(set==2){
+    two();
+    disappearTwo();
+  }
+  else if(set==3){
+    three();
+    disappearThree();
+  }
+  else if(set==4){
+    four();
+    disappearFour();
+  }
+  else if(set==5){
+    five();
+    disappearFive();
+  }
+  else if(set==6){
+    six();
+    disappearSix();
+  }
+  else if(set==7){
+    seven();
+    disappearSeven();
+  }
+  else if(set==8){
+    eight();
+    disappearEight();
+  }
+  else if(set==9){
+    nine();
+    disappearNine();
+  }
+  else if(set==10){
+    ten();
+    disappearTen();
+  }
+}
+
 function round(shuffledCards){
   theirs=(shuffledCards[0]);
   console.log("theirs:" + theirs);
@@ -306,3 +362,35 @@ if(shuffled==false){
  }
 }
 /////////////////
+function setOne(){
+set=1;
+}
+
+function setTwo(){
+set=2;
+}
+function setThree(){
+set=3;
+}
+function setFour(){
+set=4;
+}
+function setFive(){
+set=5;
+}
+function setSix(){
+set=6;
+}
+function setSeven(){
+set=7;
+}
+function setEight(){
+set=8;
+}
+function setNine(){
+set=9;
+}
+function setTen(){
+set=10;
+}
+
